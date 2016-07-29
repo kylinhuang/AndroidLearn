@@ -1,0 +1,32 @@
+1 边框
+
+
+2 TextView
+class HelloReactNative extends Component {
+  render() {
+    return (
+      <View style = {styles.container}>
+        <Text style = {styles.title}>kylinhuang</Text>
+      </View>
+    );
+  }
+}
+
+let styles = StyleSheet.create({
+
+  title:{
+    fontSize: 26 ,
+    color: '#6435c9',
+    textAlign:'center' , //文字对齐方式
+    fontStyle:'italic' , //文字样式
+    letterSpacing:2,    //字间距
+    lineHeight:33 ,     //行间距
+    fontFamily:'Helvetica Neue' , //字体
+    fontWeight:'bold' , //900 -100
+    textDecorationLine:'line-through',//line-through 删除线
+    // underline 下划线
+
+    textDecorationStyle:'solid' //solid 实线  double 双实线 dotted 点线 dashed虚线
+  },
+  .......
+  });
