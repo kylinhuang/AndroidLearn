@@ -39,6 +39,3 @@ buck-out/
 \.buckd/
 android/app/libs
 android/keystores/debug.keystore
-
-#忽略根目录下的 /node_modules/ 目录的全部内容；
-/node_modules/*

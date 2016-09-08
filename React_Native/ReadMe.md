@@ -3,4 +3,4 @@
 /node_modules/*
 
 在项目根目录下执行
-npm install 
+npm install

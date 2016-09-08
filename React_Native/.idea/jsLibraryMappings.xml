@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/Buy" libraries="{React_Native/Buy/node_modules}" />
+    <file url="file://$PROJECT_DIR$/Hello" libraries="{React_Native/Hello/node_modules}" />
+    <file url="file://$PROJECT_DIR$/ListViewDemo" libraries="{React_Native/ListViewDemo/node_modules}" />
+    <file url="file://$PROJECT_DIR$/ListViewGridView" libraries="{React_Native/ListViewGridView/node_modules}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
   </component>
 </project>
