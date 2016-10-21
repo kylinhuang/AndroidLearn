@@ -9,28 +9,67 @@ import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    ScrollView
 } from 'react-native';
+
+var  CommonMyCell = require('./XMGCommonMyCell');
+var MineMiddleView = require('./XMGMineMiddleView');
+var HeaderView = require('./XMGMineHeaderView');
 
 var Mine = React.createClass({
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    Mine
-                </Text>
-            </View>
+            <ScrollView  style={styles.scrollViewStyle} >
+
+                {/*头部的View*/}
+                <HeaderView />
+
+                <View>
+                    <CommonMyCell
+                        leftIconName="collect"
+                        leftTitle="我的订单"
+                        rightTitle="查看全部订单"
+                    />
+                    <MineMiddleView />
+                </View>
+
+                <View style={{marginTop:20}}>
+                    <CommonMyCell
+                        leftTitle="钱包"
+                        leftIconName="draft"
+                        rightTitle="账户余额" />
+
+                    <CommonMyCell
+                        leftTitle="抵用券"
+                        leftIconName="like"
+                        rightTitle="0" />
+                </View>
+
+
+                <View style={{marginTop:20}}>
+                    <CommonMyCell
+                        leftIconName="card"
+                        leftTitle="积分商城" />
+                </View>
+
+                <View style={{marginTop:20}}>
+                    <CommonMyCell
+                        leftTitle="合作"
+                        leftIconName="new_friend"
+                        rightIconName="me_new"
+                    />
+                </View>
+
+            </ScrollView>
         );
     }
 });
 
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+    scrollViewStyle: {
+        backgroundColor: '#e8e8e8',
     },
     welcome: {
         fontSize: 20,
