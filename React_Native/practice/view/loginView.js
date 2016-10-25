@@ -99,8 +99,7 @@ const styles = StyleSheet.create({
         marginTop:30,
         marginBottom:30,
         justifyContent:'center', //主轴
-        alignItems:'center',//侧轴
-
+        alignItems:'center',//子元素沿着次轴排列方式 flex-start、center、flex-end以及stretch。
         borderRadius:8,
 
     },
@@ -110,7 +109,7 @@ const styles = StyleSheet.create({
         // backgroundColor:'red',
         // marginTop:30,
         // marginBottom:30,
-        flexDirection:'row', //主轴方向
+        flexDirection:'row', //主轴方向 row column
         justifyContent:'flex-end', //子元素沿着主轴的排列方式 lex-start、center、flex-end、space-around以及space-between
     },
     loginOtherStyle: {
