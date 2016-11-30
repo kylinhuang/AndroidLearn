@@ -8,4 +8,4 @@
 
 
 # Cordova
-* [Cordova 基础入门](/Cordova/blog/Cordova 基础入门.md)
+* [Cordova 基础入门](/Cordova/blog/Cordova 环境安装.md)
