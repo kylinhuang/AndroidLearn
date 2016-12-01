@@ -35,3 +35,56 @@
 检测是否安装完成
 
     ionic info
+
+
+
+
+# 创建项目
+
+    cordova create hello com.kylin.hello
+
+
+# 运行
+
+    cd hello/
+    cordova platform  add android
+    cordova build
+
+    cordova run android(连接手机上运行)
+
+
+
+# 疑问
+1. 创建项目
+
+
+    cordova create hello com.kylin.hello
+
+    ionic start myproject
+
+    区别在什么地方？
+
+    ionic 创建基于cordova 只是命令不一样
+
+
+### IOS
+
+    ionic start myproject
+    cd myproject platform add ios
+    ionic build ios
+    ionic emulate ios
+
+### android   
+
+
+    ionic start myproject
+    cd myproject platform add android
+    ionic build android
+    ionic emulate android(模拟器上运行)
+    ionic run android (连接手机上运行)
+
+
+
+
+
+ionic serve  (页面调试)
