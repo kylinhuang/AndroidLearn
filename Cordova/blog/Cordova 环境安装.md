@@ -49,7 +49,6 @@
     cd hello/
     cordova platform  add android
     cordova build
-
     cordova run android(连接手机上运行)
 
 
@@ -70,15 +69,16 @@
 ### IOS
 
     ionic start myproject
-    cd myproject platform add ios
+    cd myproject
+    ionic platform add ios
     ionic build ios
     ionic emulate ios
 
 ### android   
 
-
     ionic start myproject
-    cd myproject platform add android
+    cd myproject
+    ionic platform add android
     ionic build android
     ionic emulate android(模拟器上运行)
     ionic run android (连接手机上运行)
@@ -88,3 +88,41 @@
 
 
 ionic serve  (页面调试)
+
+
+
+npm install -g plugman //安装plugman
+
+
+
+
+# 配置已经存在项目运行
+cd hello/
+### 1 npm install
+
+    npm install
+### 2 添加平台
+
+    cordova platform  add android
+
+### 3 添加插件（勿忘）
+
+    cordova plugin add ../Plugins/cordova-cookie-master-master/
+
+### 4 添加插件    
+
+    cordova run android
+
+
+===============
+查看项目插件
+
+    cordova plugin
+
+删除插件
+
+    cordova plugin rm com.sengled   
+
+添加插件        
+
+    cordova plugin add <path>
