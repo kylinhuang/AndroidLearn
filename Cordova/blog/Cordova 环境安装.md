@@ -90,6 +90,20 @@
 ionic serve  (页面调试)
 
 
+# ionic 创建方式
+默认创建  默认使用ionic1
+
+    ionic start myproject
+
+指定创建 ionic2 版本
+
+    ionic start awesome-app --v2
+
+指定创建  ionic2 版本   设置 Typescript
+
+    ionic start awesome-app --v2 --typescript 
+
+
 
 npm install -g plugman //安装plugman
 
@@ -114,15 +128,34 @@ cd hello/
     cordova run android
 
 
+有些问题 TODO  
+这样有时候不一定能成功
+ionic platform add android
+ionic run android
+还是失败
+多执行几次
+ionic run android 就可以了？？？？？
+
+
+
 ===============
 查看项目插件
 
     cordova plugin
 
+    ionic plugin
+
 删除插件
 
     cordova plugin rm com.sengled   
+    ionic plugin rm com.sengled.slliveplayer
 
 添加插件        
 
     cordova plugin add <path>
+    ionic plugin add <path>
+
+运行
+
+    cordova run android  
+    ionic run android    
