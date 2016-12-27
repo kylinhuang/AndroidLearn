@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*公用*/
+.comwidth{
+    width: 1000px;
+    margin-left:  auto;
+    margin-right: auto;
+}
+/*topBar*/
+.topBar{
+    height: 31px;
+    background-color: #F7F7F7;
+    line-height: 31px; //line-height 属性设置行间的距离（行高
+}
+/*选择鼠标指针浮动在其上的元素，并设置其样式：*/
+.topBar a:hover{color: red;}
+
+.collection{
+    background: url("../img/icon/collection.png") left center no-repeat;
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+/*logo*/
+.logoBar{
+    height:85px;
+    background-color: #1D7ad9;
+}
+
+.logo{
+    padding-left: 41px;
+    padding-top: 13px;
+}
+
+
+
+
+/*topBar rightArea */
+.rightArea{
+    float: right;
+}
+.leftArea{
+    float: left;
+}
