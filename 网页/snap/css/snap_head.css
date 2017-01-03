@@ -1,0 +1,26 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+/* overflow 如果元素中的内容超出了给定的宽度和高度属性，overflow 属性可以确定是否显示滚动条等行为。 background: #e8e8e8;*/
+    /*visible	默认值。内容不会被修剪，会呈现在元素框之外。*/
+    /*hidden	内容会被修剪，并且其余内容是不可见的。*/
+    /*scroll	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。*/
+    /*auto	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。*/
+    /*inherit	规定应该从父元素继承 overflow 属性的值。*/
+    background-size: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: #f3985d;
+    z-index: 101;
+    /*z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。*/
+    /*auto	默认。堆叠顺序与父元素相等。*/
+    /*number	设置元素的堆叠顺序。*/
+    /*inherit	规定应该从父元素继承 z-index 属性的值。*/
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}

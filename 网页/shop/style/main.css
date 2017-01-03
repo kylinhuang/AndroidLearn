@@ -6,6 +6,14 @@
     margin-left:  auto;
     margin-right: auto;
 }
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+
+
 /*topBar*/
 .topBar{
     height: 31px;
@@ -30,6 +38,21 @@
 .logo{
     padding-left: 41px;
     padding-top: 13px;
+}
+
+.search_box{
+    width: 430px;
+}
+.search_text{
+    width:360px;
+    height:35px;
+}
+.search_btn{
+    width:70px;
+    height:35px;
+    background-color: #FF8C00;
+    color: #FFFFFF;
+    font-family: "sans serif";
 }
 
 

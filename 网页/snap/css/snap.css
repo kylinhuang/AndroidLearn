@@ -1,0 +1,18 @@
+
+.snap_list {
+    width: 670px;
+    height: 375px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -335px;
+    margin-top: -400px;
+}
+
+.snapone {
+    width: 670px;
+    height: 180px;
+    margin-bottom: 13px;
+}
+
