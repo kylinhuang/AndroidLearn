@@ -1,4 +1,4 @@
-# jQuery基本语法
+# 2 jQuery基本语法
 
 ### 基础语法： $(selector).action()
 <li>美元符号定义 jQuery
