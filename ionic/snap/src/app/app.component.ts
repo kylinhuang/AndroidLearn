@@ -22,7 +22,9 @@ export class MyApp {
 
 
   constructor(public platform: Platform,
-              public ionicService: IonicService ) {
+              public ionicService: IonicService,
+              public menu: MenuController
+) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.

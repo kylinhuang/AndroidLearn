@@ -11,6 +11,16 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { IonicService } from '../services/requset/IonicService';
 
+import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { ItemDetailsPage } from '../pages/item-details/item-details';
+import { ListPage } from '../pages/list/list';
+import { Menu } from '../pages/menu/Menu';
+
+
+import { HelpPage } from '../pages/help/help';
+
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -18,7 +28,12 @@ import { IonicService } from '../services/requset/IonicService';
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    HelloIonicPage,
+    ItemDetailsPage,
+    ListPage,
+    Menu,
+    HelpPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -30,7 +45,12 @@ import { IonicService } from '../services/requset/IonicService';
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    HelloIonicPage,
+    ItemDetailsPage,
+    ListPage,
+    Menu,
+    HelpPage
   ],
   providers: [IonicService,{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

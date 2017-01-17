@@ -11,6 +11,10 @@ import { BaseRequset } from '../../services/requset/BaseRequset';
 
 import { TabsPage } from '../tabs/tabs';
 
+
+
+import { Menu } from '../menu/Menu';
+
 import {Toast} from 'ionic-native';
 
 
@@ -69,7 +73,8 @@ export class LoginPage {
         //登陆成功
         // TODO   --- jsessionid 保存 本地
         // jsonStr.jsessionid;
-        this.navCtrl.setRoot(TabsPage);
+        // this.navCtrl.setRoot(TabsPage);
+        this.navCtrl.setRoot(Menu);
       } else {
 
         Toast.showShortBottom("再按一次退出应用").subscribe(
