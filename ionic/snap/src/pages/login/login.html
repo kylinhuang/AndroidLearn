@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title> Login </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div id="div_content">
+    <!-- ============================ TOP ======================================== -->
+    <div id="div_top">
+      <div id="logo_div">
+        <img id="logo_img" src="assets/img/img_logo_login.png">
+      </div>
+    </div>
+    <!-- ============================ MIDDLE ======================================== -->
+    <div id="div_middle">
+      <div id="username_div" ion-item no-lines>
+        <ion-icon id="username_icon" name="person" item-left></ion-icon>
+        <ion-input id="username_input" type="email" placeholder="Email address" [(ngModel)]="login.username"></ion-input>
+      </div>
+      <div id="password_div" ion-item no-lines>
+        <ion-icon id="password_icon_left" name="lock" item-left></ion-icon>
+        <ion-icon id="password_icon_right" name="eye" item-right></ion-icon>
+        <ion-input id="password_input" type="password" placeholder="Password" [(ngModel)]="login.password"></ion-input>
+      </div>
+      <div id="error_div" *ngIf="loginErr.isShow">
+        <ion-label id="error_text">{{loginErr.message}}</ion-label>
+      </div>
+      <div id="login_div">
+        <button id="login_btn" ion-button block (click)="onLoginBtnClick()">Sign In</button>
+      </div>
+
+      <div id="forgot_pw_div">
+        <span id="forgot_pw_text" (click)="onForgotViewClick()" >Forgot password</span>
+      </div>
+
+      <div id="#">
+        <span (click)="ontest()" >ontest</span>
+      </div>
+
+    </div>
+    <!-- ============================ BOTTOM ======================================== -->
+    <div id="div_bottom">
+      <div id="create_account_div">
+        <span>
+          <span id="create_account_text_one">Don't have an account? </span>
+          <span id="create_account_text_two" (click)="onRegisterViewClick()">Create account</span>
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>
+

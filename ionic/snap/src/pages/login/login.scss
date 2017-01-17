@@ -1,0 +1,89 @@
+login{
+  ion-header{
+    opacity:0;
+    /*不透明度。从 0.0 （完全透明）到 1.0（完全不透明）。*/
+  }
+  ion-content{
+    /*background-image: url('assets/img/bg_login.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+  }
+  #div_content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #div_top{
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  #div_middle{
+    padding-bottom: 80px;
+  }
+  #div_bottom{
+  }
+  #logo_div{
+    text-align: center;
+  }
+  #logo_img{
+    width: 48%;
+    height:auto;
+  }
+  #username_div,#password_div{
+    border: solid 0;
+    border-radius: 5px;
+    background-color:rgba(0,0,0,0.3);
+  }
+  #password_div{
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  #username_input,#password_input,#username_icon,#password_icon_left,#password_icon_right{
+    color: #ffffff;
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ffffff;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ffffff;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ffffff;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ffffff;
+  }
+  #error_div{
+    text-align: center;
+  }
+  #error_text{
+    margin-bottom: 5px;
+    color: #d52b1e;
+  }
+  #login_btn{
+    background-color: #f39b63;
+    color: #ffffff;
+  }
+
+
+  #forgot_pw_div{
+    text-align: right;
+    margin-top: 15px;
+  }
+  #forgot_pw_text{
+    color: #507daf;
+  }
+
+  #create_account_div{
+    text-align: center;
+    margin-top: 10px;
+  }
+  #create_account_text_one,#create_account_text_two{
+    color: #507daf;
+  }
+  #create_account_text_two{
+    text-decoration: underline;
+    text-underline-color: #ffffff;
+  }
+
+}
