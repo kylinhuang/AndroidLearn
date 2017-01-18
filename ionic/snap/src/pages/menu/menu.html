@@ -6,9 +6,20 @@
     <!--</ion-toolbar>-->
   <!--</ion-header>-->
 
+  <!--<ion-item>-->
+    <!--<ion-avatar item-left>-->
+      <!--<img src="assets/img/avatar-ts-woody.png">-->
+    <!--</ion-avatar>-->
+    <!--<h2>Woody</h2>-->
+    <!--&lt;!&ndash;<p>This town ain't big enough for the two of us!</p>&ndash;&gt;-->
+    <!--<ion-note item-right>3:43 pm</ion-note>-->
+  <!--</ion-item>-->
+
   <ion-content>
     <ion-list>
       <button ion-item *ngFor="let p of pages" id="item_layout" (click)="openPage(p)">
+
+        <!--<ion-icon name='musical-notes' item-left style="color: #d03e84" ></ion-icon>-->
         <img id="item_icon" src= {{p.img}} >
         <span id="item_title" >{{p.title}}</span>
 
