@@ -1,0 +1,55 @@
+page-MySnap{
+
+  .led_item_title_layout{
+    width: 100%;
+    height:40px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+  }
+  .Led_name{
+    float: left;
+    font-size: 22px;
+  }
+  .Led_status{
+    float: right;
+    width:  40px;
+    height: 40px;
+  }
+  .Led_preview{
+    width: 100%;
+    height: 300px;
+  }
+
+  .led_item_bottom_layout{
+    background-color: #8e9093;
+    flexDirection:row;
+    alignItems:center;
+  }
+
+
+
+
+  .ion-ios-Ledswitch:before,
+  .ion-ios-Ledswitch-circle:before,
+  .ion-ios-Ledswitch-circle-outline:before,
+  .ion-ios-Ledswitch-outline:before,
+  .ion-md-Ledswitch:before,
+  .ion-md-Ledswitch-circle:before,
+  .ion-md-Ledswitch-circle-outline:before,
+  .ion-md-Ledswitch-outline:before {
+    @extend .ion;
+  }
+
+  .ion-ios-Ledswitch:before,
+  .ion-ios-Ledswitch-outline:before,
+  .ion-md-Ledswitch:before,
+  .ion-md-Ledswitch-outline:before {
+
+    content: url('../../../assets/img/icon_brightness.png');
+    //content: 'your-custom-image';
+  }
+
+
+
+
+}

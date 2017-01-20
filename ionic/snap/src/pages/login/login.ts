@@ -2,7 +2,7 @@
 'use strict';
 import {Component} from "@angular/core";
 
-import { NavController } from 'ionic-angular';
+import { NavController,LoadingController } from 'ionic-angular';
 
 import { IonicService } from '../../services/requset/IonicService';
 
@@ -38,7 +38,8 @@ export class LoginPage {
   };
 
   constructor( public navCtrl : NavController,
-               public ionicService : IonicService
+               public ionicService : IonicService,
+               public loadingCtrl: LoadingController
   ) {
 
   }
@@ -50,6 +51,13 @@ export class LoginPage {
   }
 
   onLoginBtnClick(){
+
+      let dialog = this.loadingCtrl.create({
+        content: 'Please wait...',
+        // duration: 3000,
+        dismissOnPageChange: false
+      });
+    dialog.present();
 
     let requset = new BaseRequset();
     requset.name = "login";
@@ -69,15 +77,16 @@ export class LoginPage {
 // \"appServerAddr\":null,\"ucenterAddr\":null,\"snapServiceMinVerison\":0,\"ifCheckSessionid\":0}"
 
       var jsonStr = JSON.parse(responseJson);
-      if (200 == jsonStr.messageCode ){
+      if (null != jsonStr  && null != jsonStr.messageCode && 200 == jsonStr.messageCode ){
         //登陆成功
         // TODO   --- jsessionid 保存 本地
         // jsonStr.jsessionid;
         // this.navCtrl.setRoot(TabsPage);
+        dialog.dismissAll();
         this.navCtrl.setRoot(Menu);
       } else {
-
-        Toast.showShortBottom("再按一次退出应用").subscribe(
+        dialog.dismissAll();
+        Toast.showShortBottom("登陆失败").subscribe(
           toast => {
             console.log(toast);
           }

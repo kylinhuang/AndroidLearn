@@ -17,7 +17,24 @@ import { ListPage } from '../pages/list/list';
 import { Menu } from '../pages/menu/Menu';
 
 
+//CameraPage
+import { CameraPage } from '../pages/camera/camera';
+import { MySnapPage } from '../pages/camera/mysnap/mysnap';
+import { SecurityPage } from '../pages/camera/security/security';
+import { DiscoverPage } from '../pages/camera/discover/discover';
+
+//LightingPage
+import { LightingPage } from '../pages/lighting/lighting';
+
+//HelpPage
 import { HelpPage } from '../pages/help/help';
+
+
+import { AccountPage } from '../pages/account/account';
+
+
+import { DevicesManagementPage } from '../pages/devicesmanagement/devicesmanagement';
+
 
 
 
@@ -33,7 +50,20 @@ import { HelpPage } from '../pages/help/help';
     ItemDetailsPage,
     ListPage,
     Menu,
-    HelpPage
+
+    HelpPage,
+
+    AccountPage,
+
+    LightingPage,
+
+    DevicesManagementPage,
+
+    CameraPage,
+    MySnapPage,
+    SecurityPage,
+    DiscoverPage,
+
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -50,7 +80,22 @@ import { HelpPage } from '../pages/help/help';
     ItemDetailsPage,
     ListPage,
     Menu,
-    HelpPage
+
+    HelpPage,
+
+    AccountPage,
+
+
+    LightingPage,
+
+    DevicesManagementPage,
+
+    CameraPage,
+    MySnapPage,
+    SecurityPage,
+    DiscoverPage,
+
+
   ],
   providers: [IonicService,{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

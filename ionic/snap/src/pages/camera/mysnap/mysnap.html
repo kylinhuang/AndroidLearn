@@ -1,0 +1,109 @@
+<!--<ion-header no-shadow>-->
+  <!--<ion-navbar>-->
+    <!--<ion-buttons start>-->
+      <!--<button ion-button icon-only (click) = "addDeviceClick()">-->
+        <!--<ion-icon style="width: 25px;height: 25px;padding: 0 0 0 0;" name="leftIcon"></ion-icon>-->
+      <!--</button>-->
+    <!--</ion-buttons>-->
+    <!--<ion-title text-center>Security</ion-title>-->
+  <!--</ion-navbar>-->
+<!--</ion-header>-->
+
+
+
+<ion-content class="security-content-body">
+  <!--<ion-refresher (ionRefresh)="doRefresh($event)">-->
+    <!--<ion-refresher-content refreshingText="Refreshing...">-->
+    <!--</ion-refresher-content>-->
+  <!--</ion-refresher>-->
+
+  <!-- 没有设备-->
+  <!--<div *ngIf="securityDevIndex==-1" >-->
+    <!--<div class="imgClass">-->
+      <!--<img src="assets/img/activity/no_device_pic@2x.png">-->
+    <!--</div>-->
+    <!--<div class="pClass">-->
+      <!--Please <strong>add a device</strong> <br> or <strong>take a tour</strong>-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <div >
+
+    <div class="led_item_title_layout">
+      <span class="Led_name" left > Led name </span>
+      <img  class="Led_status" src="assets/img/btn_lightcontrol_on.png"  >
+    </div>
+
+    <img  class="Led_preview" src="assets/img/advance-card-jp.jpg"  >
+
+    <div class="led_item_bottom_layout" >
+      <button ion-button clear icon-left>
+        <ion-icon name='Ledswitch' is-active="false"></ion-icon>
+        OFF
+      </button>
+
+
+      <img src="../../../assets/img/icon_rec.png">
+
+
+    </div>
+
+  </div>
+
+
+  <!--<div  >-->
+    <!--<div  class="seurity-card" *ngFor="let deviceItem of doCameraList; let id=index">-->
+      <!--<div ion-item class="header-title" no-lines>-->
+        <!--<ion-label class="text-color">{{deviceItem.name}}</ion-label>-->
+        <!--<img src="assets/img/security-detail/icon_snap.png"-->
+             <!--*ngIf="deviceItem.isKeepAlive===0 && deviceItem.isMediaOnline===0  &&  deviceItem.isAvailable===1" width="40" height="40" item-right/>-->
+        <!--<img src="assets/img/security-detail/icon_snap_selected.png" width="40" height="40" item-right *ngIf=" deviceItem.isKeepAlive===1 && deviceItem.isAvailable==1"/>-->
+      <!--</div>-->
+      <!--<div class="card-content" (click)="jumpLivePage(deviceItem)">-->
+        <!--<div *ngIf="deviceItem.isKeepAlive===1 && deviceItem.isMediaOnline===1 &&  deviceItem.isAvailable===1">-->
+          <!--<div>-->
+            <!--<img id="img_{{id}}" class="pic" text-center src="http://h.hiphotos.baidu.com/zhidao/pic/item/6d81800a19d8bc3ed69473cb848ba61ea8d34516&#45;&#45;.jpg"  (load)="imgload()" (error)="imgError(id)"/>-->
+          <!--</div>-->
+
+          <!--<div  *ngIf="loadImgBool===true">-->
+            <!--<ion-img class="card-content-load-fail-img" text-center src="assets/img/security-detail/life_logo_fail_loaded.png" width="200" height="76"></ion-img>-->
+            <!--<div>-->
+              <!--<ion-label text-center class="p-line">Failed to load camera snapshot due to a connection</ion-label>-->
+              <!--<ion-label text-center class="p-line">timeout.Swipe down to load it again</ion-label>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div *ngIf="deviceItem.isAvailable ===2">-->
+          <!--<ion-img class="card-content-err-img"  src="assets/img/security-detail/life_security_disable.png" width="100" height="100"></ion-img>-->
+        <!--</div>-->
+        <!--<div  *ngIf="deviceItem.isKeepAlive===0 && deviceItem.isMediaOnline===0 && deviceItem.isAvailable!=2">-->
+          <!--<ion-img class="card-content-line-img" src="assets/img/security-detail/life_security_offline.png" width="100" height="100"></ion-img>-->
+          <!--<div>-->
+            <!--<p text-center class="p-line" >Warning:Lost connection to the Snap!</p>-->
+            <!--<p text-center class="p-line" >it could be that this Snap lost power or is having difficulty</p>-->
+            <!--<p text-center class="p-line" >communicating with the cloud due to poor netWork condition.</p>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; <div>-->
+           <!--<ion-img class="content-img" src="assets/img/security-detail/life_security_loading" width="100" height="100"></ion-img>-->
+         <!--</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div>-->
+          <!--<ion-img class="content-img" src="assets/img/security-detail/life_security_update"></ion-img>-->
+        <!--</div>-->
+        <!--<div>-->
+          <!--<ion-img class="content-img" src="assets/img/security-detail/life_security_reset.png"></ion-img>-->
+          <!--<ion-label text-center>New Snap:SNAP_A1_F5</ion-label>-->
+          <!--<ion-label text-center>Synchronizing with cloud,please wait...</ion-label>-->
+        <!--</div>&ndash;&gt;-->
+      <!--</div>-->
+      <!--<div ion-item no-lines class="footer" *ngIf="deviceItem.isKeepAlive===1 && deviceItem.isMediaOnline===1 &&  deviceItem.isAvailable===1">-->
+        <!--<img src="assets/img/security-detail/icon_light.png" width="26" height="26" item-left/>-->
+        <!--<p item-left class="footer-p">80%</p>-->
+        <!--<img src="assets/img/security-detail/icon_REC_stop.png" width="64" height="26" item-left/>-->
+        <!--<img src="assets/img/security-detail/icon_wifi.png" width="22" height="22" item-left/>-->
+        <!--<img src="assets/img/security-detail/snap_watermaker.png" width="75" height="25" item-right/>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+</ion-content>

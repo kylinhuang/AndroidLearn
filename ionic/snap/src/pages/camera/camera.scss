@@ -1,0 +1,157 @@
+page-camera{
+
+  .ion-tab-icon-base {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ion-tab-icon-md-base {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  //
+  //.ion-ios-tab1icon:before,
+  //.ion-ios-tab1icon-circle:before,
+  //.ion-ios-tab1icon-circle-outline:before,
+  //.ion-ios-tab1icon-outline:before,
+  //.ion-md-tab1icon:before,
+  //.ion-md-tab1icon-circle:before,
+  //.ion-md-tab1icon-circle-outline:before,
+  //.ion-md-tab1icon-outline:before {
+  //  @extend .ion;
+  //}
+  //
+  //.ion-ios-tab1icon:before,
+  //.ion-ios-tab1icon-outline:before,
+  //.ion-md-tab1icon:before,
+  //.ion-md-tab1icon-outline:before {
+  //
+  //  content: url('../../assets/img/tab_my_snap_checked.png');
+  //  //content: 'your-custom-image';
+  //}
+
+
+
+  // add icon
+  .ion-ios-tab1icon,
+  .ion-ios-tab1icon-circle,
+  .ion-ios-tab1icon-circle-outline,
+  .ion-ios-tab1icon-outline,
+  .ion-md-tab1icon,
+  .ion-md-tab1icon-circle,
+  .ion-md-tab1icon-circle-outline,
+  .ion-md-tab1icon-outline {
+    @extend .ion;
+  }
+
+  .ion-ios-tab1icon,
+  .ion-ios-tab1icon-outline,
+  .ion-md-tab1icon,
+  .ion-md-tab1icon-outline {
+    content: url('../../assets/img/tab_my_snap_checked.png');
+  }
+
+  // add icon
+  .ion-ios-tab2icon,
+  .ion-ios-tab2icon-circle,
+  .ion-ios-tab2icon-circle-outline,
+  .ion-ios-tab2icon-outline,
+  .ion-md-tab2icon,
+  .ion-md-tab2icon-circle,
+  .ion-md-tab2icon-circle-outline,
+  .ion-md-tab2icon-outline {
+    @extend .ion;
+  }
+
+  .ion-ios-tab2icon,
+  .ion-ios-tab2icon-outline,
+  .ion-md-tab2icon,
+  .ion-md-tab2icon-outline {
+    content: url('../../assets/img/tab_security_unchecked.png');
+  }
+
+  // add icon
+  .ion-ios-tab3icon,
+  .ion-ios-tab3icon-circle,
+  .ion-ios-tab3icon-circle-outline,
+  .ion-ios-tab3icon-outline,
+  .ion-md-tab3icon,
+  .ion-md-tab3icon-circle,
+  .ion-md-tab3icon-circle-outline,
+  .ion-md-tab3icon-outline {
+    @extend .ion;
+  }
+
+  .ion-ios-tab3icon,
+  .ion-ios-tab3icon-outline,
+  .ion-md-tab3icon,
+  .ion-md-tab3icon-outline {
+    content: url('../../assets/img/tab_discover_unchecked.png');
+  }
+
+
+  /* selected */
+
+  .ion-ios-tab1iconSelected,
+  .ion-ios-tab1iconSelected-circle,
+  .ion-ios-tab1iconSelected-circle-outline,
+  .ion-ios-tab1iconSelected-outline,
+  .ion-md-tab1iconSelected,
+  .ion-md-tab1iconSelected-circle,
+  .ion-md-tab1iconSelected-circle-outline,
+  .ion-md-tab1iconSelected-outline {
+    @extend .ion;
+  }
+
+  .ion-ios-tab1iconSelected,
+  .ion-ios-tab1iconSelected-outline,
+  .ion-md-tab1iconSelected,
+  .ion-md-tab1iconSelected-outline {
+    content: url('../../assets/img/tab_my_snap_checked.png');
+  }
+
+  // add icon
+  .ion-ios-tab2iconSelected,
+  .ion-ios-tab2iconSelected-circle,
+  .ion-ios-tab2iconSelected-circle-outline,
+  .ion-ios-tab2iconSelected-outline,
+  .ion-md-tab2iconSelected,
+  .ion-md-tab2iconSelected-circle,
+  .ion-md-tab2iconSelected-circle-outline,
+  .ion-md-tab2iconSelected-outline {
+    @extend .ion;
+  }
+
+  .ion-ios-tab2iconSelected,
+  .ion-ios-tab2iconSelected-outline,
+  .ion-md-tab2iconSelected,
+  .ion-md-tab2iconSelected-outline {
+    content: url('../../assets/img/tab_security_checked.png');
+  }
+
+  // add icon
+  .ion-ios-tab3iconSelected,
+  .ion-ios-tab3iconSelected-circle,
+  .ion-ios-tab3iconSelected-circle-outline,
+  .ion-ios-tab3iconSelected-outline,
+  .ion-md-tab3iconSelected,
+  .ion-md-tab3iconSelected-circle,
+  .ion-md-tab3iconSelected-circle-outline,
+  .ion-md-tab3iconSelected-outline {
+    @extend .ion;
+  }
+
+  .ion-ios-tab3iconSelected,
+  .ion-ios-tab3iconSelected-outline,
+  .ion-md-tab3iconSelected,
+  .ion-md-tab3iconSelected-outline {
+    content: url('../../assets/img/tab_discover_checked.png');
+  }
+
+}

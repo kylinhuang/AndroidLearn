@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Account</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding id="content" >
+
+  <div id="div_content">
+    <div id="div_top">
+      <!--logo-->
+      <div id="logo_div">
+        <img id="logo_img" src="assets/img/account/icon_avatar.png">
+      </div>
+
+      <div id="username_div">
+        <span>username</span>
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="list">
+
+      <button ion-item>
+        <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+        Edit Profile
+      </button>
+
+      <button ion-item>
+        <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+        Change Password
+      </button>
+
+      <button ion-item id="Messages">
+        <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+        Messages
+      </button>
+
+    <button ion-item id="Feedback">
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+      Feedback
+    </button>
+
+    <div  >
+      <button class="btn" ion-button block (click)="onLoginBtnClick()">Sign Out</button>
+    </div>
+
+    <div  >
+      <button class="btn" ion-button block (click)="onLoginBtnClick()">Delete Account</button>
+    </div>
+
+    <!--<button ion-button full>Full Button</button>-->
+
+
+    <!--<button ion-button full>Full Button</button>-->
+
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+</ion-content>

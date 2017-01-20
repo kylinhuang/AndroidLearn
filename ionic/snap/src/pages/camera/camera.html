@@ -1,0 +1,25 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title >Camera</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+
+<ion-content padding>
+
+  <ion-tabs [selectedIndex]="mySelectedIndex" >
+    <ion-tab [root]="tab1Root" tabTitle="MySnap"   tabIcon="ios-aperture-outline" (ionSelect)="tabSelected(1)" ></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="Security" tabIcon="logo-angular" (ionSelect)="tabSelected(2)" ></ion-tab>
+    <ion-tab [root]="tab3Root" tabTitle="Discover" tabIcon="ios-globe-outline" (ionSelect)="tabSelected(3)"></ion-tab>
+
+  </ion-tabs>
+
+
+</ion-content>

@@ -1,0 +1,39 @@
+page-account{
+  .content{
+    background-color: #f4f4f4;
+  }
+
+  #logo_div{
+    text-align: center;//水平
+    margin-top: 50px;
+    //vertical-align: center;
+  }
+
+  #username_div{
+    text-align: center;//水平
+    margin-top: 20px;
+  }
+
+  .button{
+    background-color: #ffffff;
+  }
+  #Messages{
+    margin-top: 20px;
+  }
+  #Feedback{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn{
+    background-color: #ffffff;
+    color: red;
+  }
+
+  .list{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+
+}
