@@ -1,9 +1,7 @@
 /**
- * Created by kylinhuang on 09/01/2017.
+ * Created by kylinhuang on 14/01/2017.
  */
-
-var http = require("http");
-
+var http = require('http');
 
 http.createServer(function (request, response) {
 
@@ -18,4 +16,3 @@ http.createServer(function (request, response) {
 
 // 终端打印如下信息
 console.log('Server running at http://127.0.0.1:8888/');
-
