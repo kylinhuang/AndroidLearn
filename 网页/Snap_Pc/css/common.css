@@ -1,0 +1,29 @@
+.wrapper{width: 100%;background:#e8e8e8;overflow-y:auto;}
+
+.bigbox{width: 1000px;height:680px;margin: 0 auto;}
+/*header*/
+.header{width: 100%;height: 80px;background: #d7342f;z-index:100;position: relative;top:0;}
+.header ul{width:1004px;margin: 0 auto;position: relative}
+.header ul li{float: left;}
+.header ul li:nth-child(1) i{display:inline-block;margin-right: 198px;width: 128px;height: 79px;background: url("../images/snapicon.png") no-repeat 0 0;}
+
+.header ul li{line-height: 81px;}
+.header ul li a{display: inline-block;margin-left:34px;font-size:18px;color: #f9ede6;}
+.header ul li a:hover{color: #780a06;}
+
+.header ul li:nth-child(5){position: relative;width: 184px;}
+.header ul li:nth-child(5) a b{width: 16px;height: 16px;display:inline-block;position: absolute;top: 33px;right: 0;background: url("../images/snapicon.png") no-repeat 0 -671px;}
+
+.header ul li:nth-child(5) ol{display:none;position: absolute;top:80px;left:34px;z-index: 9999;width:150px;height: 120px;background: #d7342f;}
+.header ul li:nth-child(5) ol li a{display:block;font-size:18px;height: 40px;line-height: 40px;text-align: center;color: #f9ede6;}
+.header ul li:nth-child(5) ol li a:hover{color: #780a06;}
+
+.header ul li:nth-child(6){position: absolute;right:20px;}
+.header ul li:nth-child(6) a b{position: relative;top:10px;display: inline-block;width: 38px;height: 38px;margin-right: 8px;background: url("../images/snapicon.png") no-repeat 0 -725px;}
+
+
+.footer{width:100%;height:42px;/*position: absolute;bottom: 0;*/background-color: #bababa;}
+.footer p{line-height:42px;text-align: center;color: #dbdbdb;font-size: 14px;}
+
+
+

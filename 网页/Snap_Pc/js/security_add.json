@@ -1,0 +1,29 @@
+{
+  "messageCode": "200",
+  "info": "OK",
+  "description": "正常",
+  "totalCount": 133787,
+  "alarmList": [
+    {
+      "date": "2015-11-18",
+      "list": [
+        {
+          "uuid": "111B0:CE:18:FF:02:7E",
+          "deviceId": 10640,
+          "name": "SNAP_02_7E",
+          "timezone": "GMT+08:00",
+          "timezoneCity": "Asia/Shanghai",
+          "startTime": "2015-11-20 16:11:01",
+          "endTime": null,
+          "securityType": 1,
+          "securityMessage": null,
+          "playUrl": null,
+          "bigImage": "http://54.223.200.231:8000/amazon-storage/download?bucketName=sengledimagebucket&filename=b9c163ed-23b1-4ff0-ac89-b93186bad9ed-big-image",
+          "smallImage": "http://54.223.200.231:8000/amazon-storage/download?bucketName=sengledimagebucket&filename=b9c163ed-23b1-4ff0-ac89-b93186bad9ed-small-image",
+          "zoneName": "办公室过道",
+          "securityFlag": 6
+        }
+      ]
+    }
+  ]
+}

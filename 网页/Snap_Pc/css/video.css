@@ -1,0 +1,36 @@
+/*功能页面*/
+input[type="range"]{-webkit-appearance: none; width: 250px; height:90px; background: linear-gradient(to right, #cccccc 0%, #cccccc 100%); background-size: 250px 2px; background-position: center; background-repeat: no-repeat; overflow: hidden; outline: none;}
+input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none; width:26px; height:26px; background: url("../images/6.png") no-repeat; position:relative; z-index:999; box-shadow:0 0 2px 0 #f7f7f7;}
+input[type="range"]::-webkit-slider-thumb:after{content:" "; width:250px; height:2px; position:absolute; z-index:-1; right:26px; top:12px; background: #ff5b32; background: linear-gradient(to right, #f39b63 1%, #f39b63 70%);}
+.output{visibility: hidden;}
+.output{position: absolute;top:90px;}
+
+.feature{width: 100%;height: 100%;z-index: 999;background: #e8e8e8;}
+.feature_header{width: 100%;height: 80px;background: #f3985d;z-index:100;position: relative;top:0;overflow: hidden;}
+.f_h{width: 1000px;height:80px;margin: 0 auto;}
+.f_h div:nth-child(1){width: 42px;height: 42px;margin-top: 20px;position: relative;z-index: 999;}
+.f_h div:nth-child(1) a{display: inline-block;width: 42px;height: 42px;background: url("../images/snapicon.png") no-repeat 0 -1263px;}
+.f_h div:nth-child(2){width:1000px;position: absolute;top:0;text-align: center;}
+.f_h div:nth-child(2) h2{font-size: 28px;margin-top: 20px;margin-bottom: 6px;color:#fff;}
+.f_h div:nth-child(2) p{font-size: 14px;color: #fff;}
+.f_h div:nth-child(2) p em{margin-left: 30px;}
+
+/*视频*/
+.con_video{width: 100%;height:800px;overflow: hidden;}
+.view{width: 821px;margin:30px auto;height:800px;overflow: hidden;}
+
+/*按钮*/
+.toggle_but{width:24px;height:14px;position: absolute;right:200px;top:80px;display: block !important;}
+.toggle_but a{position:absolute;display: inline-block;width: 100%;height: 100%;background: url("../images/snapicon.png") no-repeat 0 -894px;}
+
+/*侧栏*/
+.v_list{width:200px;height:800px;overflow: hidden;position:absolute;right:0;top:80px;background: #fbfbfb;}
+.mxScrollbar{float:left;position:relative;width:200px;height:800px;overflow: hidden;border: 1px solid #f3f3f3;}
+/*color*/
+.mx-draggerCon{display: none;position: absolute;right:0;top:0;width: 16px;height: 100%;background-color: #fff;}
+.mx-draggerCn{position: absolute;top: 0;left: 0;width: 100%;height: 50px;background-color: #d47030; cursor:pointer;}
+
+.mx_container ul li{width:160px;position: relative;left: 0;height:130px; margin-left: 11px;margin-right: 11px;margin-top:13px;border-bottom: 1px solid #e8e8e8;}
+.mx_container ul li:last-child{margin-bottom:100px;}
+.mxScrollbar ul li dl dt{width: 160px;height: 90px;background: url("../images/17.png") no-repeat;}
+.mxScrollbar ul li dl dd{color: #f3985d;line-height: 38px;}

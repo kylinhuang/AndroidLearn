@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="mySnap">
+    <meta name="description" lang="en" content="sengled Snap"/>
+    <link rel="Bookmark"  type="image/x-icon"  href="../../images/logosmall.ico"/>
+    <link rel="icon"  type="image/x-icon" href="../../images/logosmall.ico" />
+    <link rel="shortcut icon"  type="image/x-icon" href="../../images/logosmall.ico"/>
+    <title>login</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+    <link rel="stylesheet" href="../../css/login.css"/>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <ul>
+            <li><i></i></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Lanuages (<span> EN </span>)<b></b></a>
+                <ol>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">American</a></li>
+                    <li><a href="#">Chinese</a></li>
+                </ol>
+            </li>
+            <li><a href="user.html"><b></b>Log in</a></li>
+        </ul>
+    </div>
+    <div class="login_box">
+        <div>
+            <p>Web page version of the need to use</p>
+            <p>the app registration in the mobile phone to use</p>
+        </div>
+
+        <form action="" method="">
+            <label for="user_email"></label>
+            <p><span class="ema"></span><input type="text" id="user_email" name="user_email"/></p>
+            <br>
+            <label for="psd_email"></label>
+            <p><span class="psd"></span><input type="password" id="psd_email" name="psd_email"/></p>
+
+            <b>User name and password error !</b>
+
+            <input type="submit" value="LOG IN" name="sub" class="sub"/>
+            <div>
+                <input type="checkbox" id="remember"  class="remember" name="remember"/>
+                <label for="remember">Remenber me</label>
+                <a href="#">Fortgot password</a>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>2014 Di all rights reserved.Zhejiang ICP 10206966-2</p>
+    </div>
+</div>
+
+
+<script src="../../js/jquery-1.9.1.js"></script>
+<script src="../../js/header.js"></script>
+<script src="../../js/brower.js"></script>
+<script>
+    $(function () {
+        $('#user_email,#psd_email').on('focus', function () {
+            $(this).parent().css('border-bottom','1px solid #cb4843')
+        });
+        $('#user_email,#psd_email').on('blur', function () {
+            $(this).parent().css('border-bottom','1px solid #cccccc')
+        });
+    })
+</script>
+</body>
+</html>

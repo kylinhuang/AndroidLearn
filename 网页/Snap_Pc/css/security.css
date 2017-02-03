@@ -1,0 +1,78 @@
+.wrapper{height: auto;position: relative;}
+.choose{width: 100%;height: 48px;background: #fcfcfc;}
+.choose ul{width: 1000px;height:50px;margin: 0 auto;position: relative}
+.choose ul li{float: left;}
+.choose ul li a{display: inline-block;height: 18px;border-right:1px solid #e8e8e8;font-size: 16px;color:#a0a0a0;text-align: center; margin-top: 17px;}
+.choose ul li:nth-child(1) a{width: 73px;}
+.choose ul li:nth-child(2) a{width: 183px;}
+.choose ul li:nth-child(3) a{width: 209px;}
+.choose ul li:nth-child(3) ol{width: 210px;height:74px;position: absolute;top:48px;left: 258px;z-index: 999;}
+.choose ul li:nth-child(3) ol li{width: 100%;height:37px;line-height:37px;text-align: center;font-size: 16px;color: #a0a0a0;background:#fcfcfc;}
+.choose ul li:nth-child(3) ol li:hover{background-color:#f3985d;color: #fcfcfc;}
+.choose ul li a:hover{color: #f3985d;}
+.choose ul li span{display:inline-block;width:16px;height:16px;background: url("../images/snapicon.png") no-repeat -70px -671px;margin-left: 12px;position: absolute;top:17px;}
+
+.choose ul strong{float: right;line-height:50px;font-size:16px;color:#a0a0a0;padding-right: 10px;}
+.choose ul strong{border: none;}
+
+/*¹ö¶¯Ìõ*/
+.v_list{width:184px;height:220px;position:absolute;left:74px;top:48px;background: #fbfbfb;z-index: 999;overflow: hidden;}
+/*color*/
+.mx-draggerCon{display: none;position: absolute;right:0;top:0;width:10px;height: 100%;background-color: #f1c7ac;}
+.mx-draggerCn{position: absolute;top: 0;left: 0;width: 100%;height: 50px;background-color: #d47030; cursor:pointer;}
+
+.mxScrollbar{float:left;height:220px;overflow: hidden;z-index: 999;position: absolute; width:184px;}
+.mxScrollbar ul{list-style: none;padding: 0;margin: 0;width:184px;}
+.mxScrollbar ul li{width:154px;text-align: center;line-height: 35px;font-size: 16px;color: #727272; position: relative;left: 0;height:35px;border-bottom: 1px solid #e8e8e8;padding-left: 10px;padding-right:20px;}
+.mxScrollbar ul li:hover{background-color:#f3985d;color: #fcfcfc;}
+
+/*time line*/
+body{overflow-y: auto;}
+.content{padding-top:25px; min-height: 720px !important;margin-bottom:70px;}
+.content .time_line{position: relative; width:1045px; margin: 0 auto;}
+.content .main .pic{position: relative; z-index: 100;}
+.content .main .pic h2{height:20px; font-size:16px; line-height: 18px; text-align: left; margin-left:45px; color:#f3985d;}
+.content .main .pic h2 i{display: inline-block;width: 17px;height: 17px;margin-right: 10px;}
+
+.content .main .pic h2 i.jia{background: url("../images/snapicon.png") no-repeat 0 -943px;}
+.content .main .pic h2 i.jian{background: url("../images/snapicon.png") no-repeat 0 -982px;}
+
+.content .main .pic h2 span{display:inline-block;width: 860px;border-bottom:dashed 1px #f3985d;float: right;margin-top: 9px;}
+.content .main .pic .list{margin:10px 0; position:relative; overflow:hidden; -webkit-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s; -moz-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s; -ms-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s; -o-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s; transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s}
+.cls{width: 1045px;overflow: hidden; zoom: 1;}
+.cls:after{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.content .time_line .main .pic.close .list{/*opacity:0;*/ height:142px!important;}
+.cls dl{float: left;margin-left:45px;margin-bottom:10px;width: 160px;height: 128px;border: 2px solid #fff;background: #fff;}
+.cls dl:hover{border: 2px solid #f3985d;}
+.cls dl dt{width: 160px;height: 90px;background: url("../images/snapimg.png") no-repeat 0 -383px;}
+.cls dl dt span{width:58px;height: 20px;background-color: #42d196;display: inline-block;float: right;font-size: 12px;color: #fff;line-height: 20px;text-align: center;}
+.cls dl dt b{display:inline-block;width: 32px;height: 32px;background: url("../images/loading_small.gif") no-repeat;margin-left:64px;margin-top:29px;}
+
+
+.cls dl dd p{font-size: 12px;line-height:20px;padding-left: 6px;color: #f3985d;}
+
+.content_1,.content_2{width: 1045px;margin: 0 auto;display: none;}
+
+/*pic_dialog*/
+.pic_mark{display:none;width: 100%;height: 100%;background:rgba(63, 63, 63, 0.88);position: fixed;left: 0;top:0;right: 0;bottom: 0;z-index: 9999}
+.pic_dialog{display:none;width:800px;height: 580px;background: #000;position: fixed;z-index: 99999;
+    left: 50%;top:50%;margin-left: -400px;margin-top: -290px;}
+
+
+.up{display:none;width:27px;height:39px;background:url("../images/up.png") no-repeat;position: fixed;right:8%;bottom:20px;text-align: center;font-size:18px;
+    line-height: 50px;cursor: pointer;z-index: 999;}
+
+.loadMore{color:#f3985d;position: absolute;margin-left:-50px;left:50%;bottom:15px;width:100px;height:24px;text-align: center;font-size:12px;
+line-height:24px;cursor: pointer;z-index: 999;border:1px solid #f3985d;border-radius: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+

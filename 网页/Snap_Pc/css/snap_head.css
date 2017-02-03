@@ -1,0 +1,29 @@
+.wrapper{width: 100%;height:100%;overflow:hidden;background:#e8e8e8;background-size:100%;}
+/*.bigbox{width: 1000px;height:850px;overflow:hidden;margin: 0 auto;}*/
+/*header*/
+.header{width: 100%;height: 80px;background: #f3985d;z-index:101;position:relative;top:0;overflow: hidden;}
+.header dl{width:1000px;height:80px;margin: 0 auto;position: relative;}
+.header dl dt{float:left;width:148px;height:79px;}
+.header dl dt a{display: inline-block;width: 148px;height: 79px;margin-top:10px;
+    background:url("../images/snapicon.png") no-repeat 0 -100px;}
+
+.header dl dd{float: right;width:630px;height: 100%; position:relative;}
+.header dl dd ul{width: 100%;height:85px;cursor:pointer;background: url("../images/nav_bg.png") no-repeat;}
+.header dl dd ul li{float: left;width: 125px;height:42px;margin-top:22px;text-align:center;cursor:pointer;}
+.header dl dd ul li a{display: inline-block;width: 125px;height:42px;line-height:42px;font-size:18px;color: #f9ede6;}
+
+
+
+.footer{width:100%;height:42px;position: absolute;bottom: 0;background-color: #bababa;overflow: hidden;}
+.footer p{line-height:42px;text-align: center;color: #dbdbdb;font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+

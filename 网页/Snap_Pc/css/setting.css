@@ -1,0 +1,89 @@
+.failure{width: 100%;margin: 0 auto;text-align: center;}
+.oops{width:433px;height: 201px;background: url("../images/snapimg.png") no-repeat 0 -1300px;display:inline-block;margin:120px auto;}
+.line1{width:100%;height: 8px;margin-bottom: 4px;background-color: #f3985d;margin-top: -122px;}
+.line2{width:100%;height: 4px;margin-bottom: 4px;background-color: #f3985d;}
+.line3{width:100%;height: 2px;margin-bottom: 17px;background-color: #f3985d;}
+
+.try{width: 375px;height: 50px;margin: 0 auto;margin-bottom: 40px;}
+.try p{font-size: 20px;line-height: 29px;color: #b1b1b1;text-align: center;}
+.try p a{color: #f3985d;text-decoration: underline;}
+
+.button{display:block;width: 282px;height: 45px;border-radius: 25px;color:#f3985d;
+    font-size:24px;border:2px solid #f3985d;margin:0 auto;background: none;
+text-align: center;line-height: 45px;}
+
+
+.success{width: 1000px;height: 562px;background-color: #fdfdfd;margin:25px auto;overflow: hidden;}
+.success h5{font-size: 16px;padding-left: 26px;height: 57px;line-height: 57px;color: #f3985d;border-bottom: 1px solid #f3985d;}
+.success ul{width: 100%;height: 48px;border-bottom:1px solid #e8e8e8;font-size: 14px;padding-left: 26px;line-height: 48px;color: #a2a2a2}
+.success ul li{position:relative;width: 473px;float:left;font-size: 14px;line-height: 48px;color: #a2a2a2;}
+.success ul li:nth-child(1){border-right: 1px solid #e8e8e8;}
+.success ul li:nth-child(2){padding-left: 26px;}
+
+
+.switchery {
+    background-color: #bcbcbc;
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 28px;
+    position: relative;
+    vertical-align: middle;
+    width: 62px;
+    float: right;
+    margin-right: 26px;
+    margin-top: 10px;
+}
+
+.switchery>small {
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    height: 24px;
+    position: absolute;
+    top: 2px;
+    width: 24px
+}
+
+.success form{position: relative;}
+.success form textarea{border: none;outline: 0;padding-left: 26px;height:90px;border-bottom: 1px solid #e8e8e8;
+width: 948px;padding-right: 26px;overflow:hidden; resize:none;font-size: 14px;line-height: 20px;background-color: #fdfdfd;}
+.success form a{display:inline-block;width: 62px;height: 28px;line-height: 28px;text-align: center;color: #fcfcfc;
+    border-radius: 4px;border: none;outline: 0;position: absolute;
+right:26px;bottom:12px; background: url("../images/snapicon.png") no-repeat 0 -1721px;}
+.success form a:nth-child(3){display: none;background: url("../images/snapicon.png") no-repeat 0 -1670px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>图片播放器</title>
+	<meta name="description" content="" />
+	
+	<script src="swfobject.js"></script>
+	<script>
+		var id;
+		function  data(id){
+			var flashvars = {};
+		var params = {
+			menu: "false",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "",
+			wmode: "direct" // can cause issues with FP settings & webcam
+		};
+		var attributes = {
+			id:id
+		};
+		swfobject.embedSWF(
+			"Img.swf", 
+			"altContent", "800", "500", "10.0.0",
+			"expressInstall.swf", 
+			flashvars, params, attributes);
+		}
+		data("ImgID");
+		setTimeout(function(){
+			var url="security.json";
+			ImgID.callAsFunction(url);
+		},1000);
+			
+	</script>
+	<style>
+		html, body { height:100%; overflow:hidden; }
+		body { margin:0; }
+	</style>
+</head>
+<body>
+	<div id="altContent">
+		<h1>图片播放器</h1>
+		<p><a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a></p>
+	</div>
+</body>
+</html>

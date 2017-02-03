@@ -1,0 +1,36 @@
+body {overflow-y:auto}
+.dis_box{width: 1020px;margin:44px auto;min-height:800px;overflow: hidden}
+.dis_box ul{width: 1010px;position:relative;margin-left: 10px;padding-bottom: 200px;}
+.dis_box ul li{float: left;margin-left: 10px;width: 188px;height: 208px;min-height:208px !important;background: #fff;border: 2px solid #fff;margin-bottom: 10px;}
+.dis_box ul li:hover{border: 2px solid #f3985d;}
+.dis_box ul li dl{width: 188px;height: 208px;}
+.dis_box ul li dl dt{width: 188px;height: 106px;background: url("../images/snapimg.png") no-repeat 0 -632px;position: relative;}
+
+/*.dis_box ul li dl dt span{display: inline-block;width: 44px;height: 44px;background: url("../images/snapicon.png") no-repeat 0 -1338px;position: absolute;left: 50%;top: 50%;margin-left: -22px;margin-top: -22px;
+}*/
+
+.dis_box ul li dl dt::after{content: "";display: inline-block;width: 44px;height: 44px;background: url("../images/snapicon.png") no-repeat 0 -1338px;position: absolute;left: 50%;top: 50%;margin-left: -22px;margin-top: -22px;
+}
+
+
+.dis_box ul li dl dt:hover::after{
+    transform:rotate(360deg) scale(1.1) ;
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+    -o-transform: rotate(360deg) scale(1.2);
+    -ms-transform:rotate(360deg) scale(1.2) ;
+    transition:transform .5s;
+}
+
+.dis_box ul li dl dt em{display: inline-block;width: 188px;height: 106px;background-color: rgba(51, 51, 51, 0.66);}
+.dis_box ul li dl dd p{padding-left: 10px;font-size: 12px;color: #f3985d;line-height: 20px;}
+.dis_box ul li dl dd div{width: 190px;height: 57px;border-top: 1px solid #f3985d;overflow: hidden;}
+.dis_box ul li dl dd div a{display: inline-block;height: 57px;overflow: hidden;}
+.dis_box ul li dl dd div a:nth-child(1){width:50px;margin: 8px 0 0 8px;background: url("../images/snapimg.png") no-repeat 0 0;}
+.dis_box ul li dl dd div a:nth-child(1){float:left;}
+.dis_box ul li dl dd div a:nth-child(2){float:left;margin-top: 10px;}
+
+.dis_box ul li dl dd div a:nth-child(2) p{width: 110px;font-size: 12px;color: #626262;}
+/*dis_dialog*/
+.dis_mark{display: none;width: 100%;height: 100%;background: rgba(63, 63, 63, 0.88);position: fixed;left: 0;top: 0;right: 0;bottom: 0;z-index: 9999}
+.dis_dialog{display: none;width:780px;height: 450px;background: #000;position: fixed;z-index: 99999;left: 50%;top: 50%;margin-left: -400px;margin-top: -225px;}
