@@ -1,0 +1,28 @@
+
+/* 初始化设置 */
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,textarea,p {
+    margin:0px;
+    padding:0px;
+    font-size:13px;
+}
+
+/* ul li 中圆点  */
+ul {
+    list-style:none;
+}
+
+/* 边框 浏览器 兼容 */
+img,a img {
+    border:none;
+}
+
+
+/* 链接 去掉 下划线 */
+a {
+    text-decoration:none;
+}
+
+/* 链接 放上去 下划线 */
+a:hover {
+    text-decoration:underline;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NodeJS</title>
+</head>
+<br>
+
+<h1> 3 Nodejs  - Demo hello world </h1>
+
+    <h3> 1 创建文件  n1_hello.js</h3>
+
+        <span> console.log("Hello world");  //输出信息</span> <br>
+
+        <span> 命令行执行 node n1_hello.js  </span> <br>
+
+        <span> 使用浏览器访问  </span> <br>
+
+
+<h3>2 使用http </h3>
+
+
+
+<pre><code>
+    var  http  =  require('http');  //引入http
+    http.createServer(function  (request,  response)  {
+        response.writeHead(200,  {'Content-Type':  'text/html;  charset=utf-8'});
+        //设置请求头
+        if(request.url!=="/favicon.ico"){  //清除第2此访问
+            console.log('访问');
+            response.write('hello,world');
+            response.end('hell,世界');//不写则没有http协议尾,但写了会产生两次访问
+        }
+    }).listen(8000);
+    console.log('Server  running  at  http://127.0.0.1:8000/');
+</code></pre>
+<code>
+
+</code>
+
+
+
+
+
+<h3> 注意</h3>
+
+<span>esponse.end('’); 必须写 否则代表没完成</span> <br>
+
+
+
+
+
+
+</body>
+</html>

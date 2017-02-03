@@ -1,0 +1,205 @@
+
+
+/*查看更多的按钮样式*/
+.btnStyle {
+    background:url(../img/default.png);
+    display:block;
+    width:103px;
+    height:27px;
+    text-align:center;
+    line-height:27px;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/*居中*/
+.auto{
+    width:80%;
+    margin: 0 auto;
+}
+
+
+
+#wrap{
+    width:920px;
+    height:850px;
+    margin:0 auto;
+}
+
+#wrap #leftBody{
+    width: 620px;
+    height:850px;
+    float: left;
+}
+
+#wrap #leftBody .leftdiv1 h2{
+    color:#000000;
+    font-size:24px;
+    font-weight:normal;
+    margin:25px 0 0 0;
+}
+
+
+#wrap #leftBody .leftdiv2 h2{
+    color:#000000;
+    font-size:24px;
+    font-weight:normal;
+    margin:25px 0 0 0;
+}
+
+#wrap #leftBody .leftdiv2 ul li{
+    width: 270px;
+    height:170px;
+    color:#F1F2EA;
+    border:1px solid #D5D7CA;
+    padding: 6px;
+    float: left;
+    margin:0 25px 25px 0  ;
+}
+
+#wrap #leftBody .leftdiv2 ul li p{
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+    font-weight: bold;
+}
+#wrap #leftBody .leftdiv3 {
+    clear: both;
+}
+#wrap #leftBody .leftdiv3 a {
+    background:url(../img/default.png);
+    display:block;
+    width:103px;
+    height:27px;
+    text-align:center;
+    line-height:27px;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#wrap #leftBody .leftdiv3  a:hover {
+    text-decoration:underline;
+}
+
+
+#wrap #rightBody{
+    width: 240px;
+    height:850px;
+    float: right;
+}
+
+#wrap #rightBody .rightdiv1 h2{
+    color:#000000;
+    font-size:24px;
+    font-weight:normal;
+    margin:25px 0 0 0;
+}
+
+#wrap #rightBody .rightdiv1 h3 a{
+     color: #0074c5;
+     font-weight: normal;
+     text-decoration: underline;
+ }
+
+
+#wrap #rightBody .rightdiv1 ul li{
+    height: 75px;
+    border-bottom: 1px  dashed #CCCCCC;
+    margin:25px 0 0 0;
+}
+
+#wrap #rightBody .rightdiv1 ul li p{
+    color: #555555;
+    margin:5px 0 0 0;
+}
+
+
+#wrap #rightBody .rightdiv2 dl.dd {
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+}
+#wrap #rightBody .rightdiv2 dl.dl1 {
+    height:64px;
+    margin:35px 0 0 0;
+    background: url("../img/twitter.png") 160px  center no-repeat;
+}
+
+#wrap #rightBody .rightdiv2 dl.dl2 {
+    height:64px;
+    margin:35px 0 0 0;
+    background: url("../img/rss.png") 160px  center no-repeat;
+}
+
+
+#rightBody .rightdiv2 dl dt a {
+    font-size:24px;
+    color:#333333;
+    font-weight:bold;
+}
+
+#body {
+    width: 1000px;
+    z-index: 1;
+    top: 90px;
+    right: 0;
+    bottom: 50px;
+    _bottom: auto;
+    left: 0;
+    _height: 100%;
+    margin: 10px auto;
+    text-align: left;
+    overflow: hidden;
+}
+
+#main {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    float: right;
+    width: 750px;
+    _height: 100%;
+    background: #fff;
+}
+#main, #side, #about {
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+
+#side {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    float: left;
+    width: 240px;
+    _height: 100%;
+}
+#navigation {
+    padding: 8px;
+}
+
+ul, ol {
+    list-style: none;
+}
+dfn, em, th, var, abbr, acronym {
+    font-size: 100%;
+    font-style: normal;
+}
+
+ul ul, ol ul {
+    list-style-type: circle;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kylinhuang</title>
+    <link rel="icon"  type="image/x-icon" href="img/iocn.jpeg" />
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- 导航栏 -->
+    <script type="text/javascript" src="js/nav.js"></script>
+
+    <!--jquery-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/learn_page.js"></script>
+
+</head>
+<body>
+
+
+
+<!--导航-->
+<div class="nav_layout"  >
+    <div class="nav" class="auto">
+        <ul>
+            <li><a class="current"  onclick="nav_changePage(1)" >首页</a></li>
+            <li><a onclick="nav_changePage(2)" >学习</a></li>
+        </ul>
+    </div>
+
+
+</div>
+
+<div id="page-wrapper" >
+    <script>
+        // 首次进入执行  加载
+        (function() {
+            $("#page-wrapper").load("./home_page.html");
+        })();
+    </script>
+
+
+</div>
+
+</body>
+</html>

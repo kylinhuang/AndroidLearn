@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title># jQuery HTML</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0}body{font-family:Helvetica,arial,freesans,clean,sans-serif;font-size:14px;line-height:1.6;color:#333;background-color:#fff;padding:20px;max-width:960px;margin:0 auto}body>*:first-child{margin-top:0 !important}body>*:last-child{margin-bottom:0 !important}p,blockquote,ul,ol,dl,table,pre{margin:15px 0}h1,h2,h3,h4,h5,h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:antialiased}h1 tt,h1 code,h2 tt,h2 code,h3 tt,h3 code,h4 tt,h4 code,h5 tt,h5 code,h6 tt,h6 code{font-size:inherit}h1{font-size:28px;color:#000}h2{font-size:24px;border-bottom:1px solid #ccc;color:#000}h3{font-size:18px}h4{font-size:16px}h5{font-size:14px}h6{color:#777;font-size:14px}body>h2:first-child,body>h1:first-child,body>h1:first-child+h2,body>h3:first-child,body>h4:first-child,body>h5:first-child,body>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top:10px}a{color:#4183c4;text-decoration:none}a:hover{text-decoration:underline}ul,ol{padding-left:30px}ul li>:first-child,ol li>:first-child,ul li ul:first-of-type,ol li ol:first-of-type,ul li ol:first-of-type,ol li ul:first-of-type{margin-top:0}ul ul,ul ol,ol ol,ol ul{margin-bottom:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}pre,code,tt{font-size:12px;font-family:Consolas,"Liberation Mono",Courier,monospace}code,tt{margin:0;padding:0;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px}pre>code{margin:0;padding:0;white-space:pre;border:0;background:transparent}pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre code,pre tt{background-color:transparent;border:0}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}hr{clear:both;margin:15px 0;height:0;overflow:hidden;border:0;background:transparent;border-bottom:4px solid #ddd;padding:0}table th{font-weight:bold}table th,table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}
+    </style>
+</head>
+<body>
+<h1>jQuery HTML</h1>
+
+<h2>Jquery 获取内容和属性</h2>
+
+<p>jQuery 中非常重要的部分，就是操作 DOM 的能力。</p>
+
+<p>jQuery 提供一系列与 DOM 相关的方法，这使访问和操作元素和属性变得很容易</p>
+
+<h3>1 获得内容和属性 - text()、html() 、val()以及 attr()</h3>
+
+<p><li> text() - 设置或返回所选元素的文本内容
+    <li> html() - 设置或返回所选元素的内容（包括 HTML 标记）
+<li> val()  - 设置或返回表单字段的值</p>
+
+<p><li> attr()  - 获取属性</p>
+
+<p>demo</p>
+
+<pre><code>&lt;script&gt;
+  $(document).ready(function(){
+
+    $("#btn1").click(function(){
+      alert("Text: " + $("#test").text());
+    });
+
+    $("#btn2").click(function(){
+      alert("HTML: " + $("#test").html());
+    });
+
+    $("button").click(function(){
+      alert("值为: " + $("#test").val());
+    });
+
+    $("button").click(function(){
+      alert($("#runoob").attr("href"));
+
+    });
+
+  });
+&lt;/script&gt;
+</code></pre>
+
+<h1>2 设置内容 - text()、html() 以及 val()</h1>
+
+<p><li> text() - 设置或返回所选元素的文本内容
+    <li> html() - 设置或返回所选元素的内容（包括 HTML 标记）
+<li> val() - 设置或返回表单字段的值</p>
+
+<p><li> attr() - 设置 属性
+    demo</p>
+
+<pre><code>&lt;script&gt;
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").text("Hello world!");
+  });
+  $("#btn2").click(function(){
+    $("#test2").html("&lt;b&gt;Hello world!&lt;/b&gt;");
+  });
+  $("#btn3").click(function(){
+    $("#test3").val("RUNOOB");
+  });
+
+  $("button").click(function(){
+    $("#runoob").attr("href","http://www.runoob.com/jquery");
+  });
+
+});
+&lt;/script&gt;
+</code></pre>
+
+<p>回调函数</p>
+
+<pre><code>&lt;script&gt;
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").text(function(i,origText){
+      return "旧文本: " + origText + " 新文本: Hello world! (index: " + i + ")";
+      });
+    });
+
+    $("#btn2").click(function(){
+      $("#test2").html(function(i,origText){
+        return "旧 html: " + origText + " 新 html: Hello &lt;b&gt;world!&lt;/b&gt; (index: " + i + ")";
+    });
+  });
+
+  $("#runoob").attr("href", function(i,origValue){
+    return origValue + "/jquery";
+  });
+
+});
+&lt;/script&gt;
+</code></pre>
+
+<h3>3 添加元素</h3>
+
+<p>添加新的 HTML 内容
+    我们将学习用于添加新内容的四个 jQuery 方法：
+    <li> append()  - 在被选元素的结尾插入内容
+    <li> prepend() - 在被选元素的开头插入内容
+    <li> after()   - 在被选元素之后插入内容
+<li> before()  - 在被选元素之前插入内容</p>
+
+<p>demo</p>
+
+<pre><code>&lt;script&gt;
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").append(" &lt;b&gt;追加文本&lt;/b&gt;。");
+
+    $("p").prepend("在开头追加文本");
+
+    $("img").after("在后面添加文本");
+
+    $("img").before("在前面添加文本");
+  });
+
+
+});
+&lt;/script&gt;
+</code></pre>
+
+<h3>4 删除元素</h3>
+
+<p><li> remove() - 删除被选元素（及其子元素）
+<li> empty() - 从被选元素中删除子元素</p>
+
+<p>demo</p>
+
+<pre><code>&lt;script&gt;
+  $(document).ready(function(){
+    $("button").click(function(){
+
+      $("#div1").empty();
+
+      $("p").remove(".italic");
+    });
+  });
+&lt;/script&gt;
+</code></pre>
+
+<h3>5 CSS类</h3>
+
+<pre><code>&lt;style type="text/css"&gt;
+.important
+{
+    font-weight:bold;
+    font-size:xx-large;
+}
+.blue
+{
+    color:blue;
+}
+&lt;/style&gt;
+</code></pre>
+
+<p><li>addClass() - 向被选元素添加一个或多个类
+    <li>removeClass() - 从被选元素删除一个或多个类
+    <li>toggleClass() - 对被选元素进行添加/删除类的切换操作
+<li>css() - 设置或返回样式属性</p>
+
+<p>demo</p>
+
+<pre><code>&lt;script&gt;
+  $(document).ready(function(){
+    $("button").click(function(){
+      $("h1,h2,p").addClass("blue");
+      $("div").addClass("important");
+    });
+
+    $("button").click(function(){
+      $("h1,h2,p").removeClass("blue");
+    });
+
+    $("button").click(function(){
+      $("h1,h2,p").toggleClass("blue");
+    });
+  });
+&lt;/script&gt;
+</code></pre>
+
+<p>返回 CSS 属性</p>
+
+<p>css("propertyname");   </p>
+
+<pre><code>$("p").css("background-color");
+</code></pre>
+
+<p>设置 CSS 属性
+    css("propertyname","value");</p>
+
+<pre><code>$("p").css("background-color","yellow");
+</code></pre>
+
+<p>设置多个 CSS 属性
+    css({"propertyname":"value","propertyname":"value",...});</p>
+
+<pre><code>  $("p").css({"background-color":"yellow","font-size":"200%"});
+</code></pre>
+
+<h3>6 尺寸</h3>
+
+<p><li>width()  --- 方法设置或返回元素的宽度（不包括内边距、边框或外边距）。
+    <li>height() --- 方法设置或返回元素的高度（不包括内边距、边框或外边距）
+    <li>innerWidth() ---  方法返回元素的宽度（包括内边距）
+    <li>innerHeight() --- 方法返回元素的高度（包括内边距）
+    <li>outerWidth() ---方法返回元素的宽度（包括内边距和边框）
+<li>outerHeight() ---方法返回元素的高度（包括内边距和边框）</p>
+
+<!-- This document is made by md2html, website is http://www.zai17.com/md2html -->
+<!-- Use style in style1-->
+</body>
+</html>

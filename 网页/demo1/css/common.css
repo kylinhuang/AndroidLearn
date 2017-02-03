@@ -1,0 +1,158 @@
+
+
+
+/*导航*/
+#nav_layout{
+    background-color:#6dbfff ;
+    height: 50px;
+}
+
+
+#nav ul {
+    margin:0 0 0 25px;
+    list-style:none;
+}
+#nav ul li {
+    float:left;
+    margin:0 10px 0 0;
+}
+
+#nav ul li a {
+    color:black;
+    font-size:13px;
+    font-weight:bold;
+    display:block;
+    width:103px;
+    height:27px;
+    text-align:center;
+    line-height:27px;
+    margin:10px 0 0 0;
+}
+
+#nav ul li a:hover {
+    background:url(../img/hover.png);
+    color:#ffffff;
+    text-decoration:none;
+}
+
+
+
+
+
+/*顶部 id header 样式 */
+#top_layout{
+    height:100px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+#top{
+
+}
+
+#top .logo {
+    padding: 25px 0 0 25px;
+    float: left;
+}
+#top .logo .icon{
+    width: 50px;
+    height:50px;
+}
+
+
+
+#top h1 span {
+    padding: 0 0 0 25px;
+    font-size:14px;
+    color:#CCCCCC;
+    float:right;
+}
+
+#top .serach {
+    width: 280px;
+    height: 50px;
+    float: right;
+    margin: 30px 30px 0px 20px;
+}
+
+#top .serach .text {
+    width:180px;
+    height:15px;
+    /*background:#161B1F;*/
+    color:#BCBCBC;
+    border:1px solid #0B0E10;
+    padding:5px;
+}
+
+
+#top .serach .submit {
+    width:80px;
+    height:50px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+/*底部 id footer 样式 */
+#footer{
+    height: 100px;
+    background-color: #2a62bc ;
+
+}
+
+#footer p {
+    text-align:center;
+    color:#ffffff;
+    line-height:200%;
+}
+
+#footer p.p1 {
+    padding-top:15px;
+}
+
+#footer p a {
+    color:#ffffff;
+    text-decoration:underline;
+    margin:0 20px 0 0;
+}
+
+
+
+
+
+#page-wrapper {
+    padding: 0 105px;
+    min-height: 568px;
+    position: relative !important;
+}
+
+#page-wrapper {
+    position: inherit;
+    margin: 0 0 0 220px;
+    min-height: 1200px;
+}
+
+#page-wrapper {
+    position: inherit;
+    margin: 0 0 0 240px;
+    min-height: 1000px;
+}
+
+#page-wrapper {
+    padding: 0 15px;
+    min-height: 568px;
+    position: relative !important;
+}
+
+#page-wrapper {
+    min-height: auto;
+}
+
+/*居中*/
+.auto {
+    width: 80%;
+    margin: 0 auto;
+}

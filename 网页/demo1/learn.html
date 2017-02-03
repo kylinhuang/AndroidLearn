@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>Kylinhuang</title>
+
+
+    <meta name="keywords" content="kylinhuang blog">
+    <meta name="description" content="kylinhuang blog">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <link rel="stylesheet" type="text/css" href="css/learn.css">
+
+
+</head>
+<body>
+
+
+<!--顶部-->
+<div id="top_layout">
+    <div id="top" class="auto">
+        <div class="logo">
+            <h1>
+                <img class="icon" src="img/iocn.jpeg">
+                <span>kylin huang</span>
+            </h1>
+        </div>
+        <div class="serach">
+            <form>
+                <input class="text" type="text">
+                <input class="submit" type="submit" value="搜索">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--导航-->
+<div id="nav_layout">
+    <div id="nav" class="auto">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="learn.html">学习</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--主体-->
+
+
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+
+                <li>
+                    <a href="index.html#"><i class="fa fa fa-globe"></i> <span class="nav-label">android</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a onclick="android_serialization()">android 性能优化之序列化.md</a>
+                        </li>
+
+                        <li>
+                            <a onclick="android_json()">android 性能优化之Json解析</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="index.html#"><i class="fa fa fa-globe"></i> <span class="nav-label">jQuery</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a onclick="jQuery(1)">1 jQuery安装使用</a>
+                        </li>
+
+                        <li>
+                            <a onclick="jQuery(2)">2 jQuery基本语法</a>
+                        </li>
+
+                        <li>
+                            <a onclick="jQuery(3)">3 jQuery HTML</a>
+                        </li>
+
+                        <li>
+                            <a onclick="jQuery(4)">4 jQuery 遍历</a>
+                        </li>
+
+                        <li>
+                            <a onclick="jQuery(5)">5 jQuery AJAX</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper">
+        <span>kkkk</span>
+
+    </div>
+
+</div>
+
+<!--jquery-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+    function android_serialization() {
+        $("#page-wrapper").load("./blog/android/Android_Optimization-serialization.html");
+    };
+    function android_json() {
+        $("#page-wrapper").load("./blog/android/Android_Optimization-serialization.html");
+    };
+
+    function jQuery(index) {
+//        window.alert(index);
+        switch (index) {
+            case 1:
+                $("#page-wrapper").load("./blog/JQuery/1_jQuery_install_use.html");
+                break;
+
+            case 2:
+                $("#page-wrapper").load("./blog/JQuery/2_JQuery_Basic_syntax.html");
+                break;
+            case 3:
+                $("#page-wrapper").load("./blog/JQuery/3_jQuery_HTML.html");
+                break;
+            case 4:
+                $("#page-wrapper").load("./blog/JQuery/4_JQuery_traversal.html");
+                break;
+            case 5:
+                $("#page-wrapper").load("./blog/JQuery/5_JQuery_AJAX.html");
+                break;
+        }
+
+    };
+
+
+
+
+
+</script>
+
+</body>
+</html>

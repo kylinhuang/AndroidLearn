@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <meta charset="UTF-8">
+
+    <title>Kylinhuang</title>
+
+
+    <meta name="keywords" content="kylinhuang blog">
+    <meta name="description" content="kylinhuang blog">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <link rel="stylesheet" type="text/css" href="css/learn.css">
+
+    <!--jquery-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- learn_page -->
+    <!--<script type="text/javascript" src="js/learn_page.js"></script>-->
+
+    <script >
+
+        function ll() {
+            window.alert("ll");
+            $("#page-wrapper #learn_page-wrapper").load("./blog/JQuery/1_jQuery_install_use.html");
+        };
+        function android_serialization() {
+            window.alert(index);
+            $("#learn_page-wrapper").load("./blog/android/Android_Optimization-serialization.html");
+        };
+        function android_json() {
+            window.alert(index);
+            $("#page-wrapper #learn_page-wrapper").load("./blog/android/Android_Optimization-serialization.html");
+        };
+
+        function jQuery(index) {
+            window.alert(index);
+            switch (index) {
+                case 1:
+                    $("#page-wrapper #learn_page-wrapper").load("./blog/JQuery/1_jQuery_install_use.html");
+                    break;
+                case 2:
+                    $("#learn_page-wrapper").load("./blog/JQuery/2_JQuery_Basic_syntax.html");
+                    break;
+                case 3:
+                    $("#learn_page-wrapper").load("./blog/JQuery/3_jQuery_HTML.html");
+                    break;
+                case 4:
+                    $("#learn_page-wrapper").load("./blog/JQuery/4_JQuery_traversal.html");
+                    break;
+                case 5:
+                    $("#learn_page-wrapper").load("./blog/JQuery/5_JQuery_AJAX.html");
+                    break;
+            }
+
+        };
+    </script>
+</head>
+<body>
+
+
+    <div id="learn">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+
+                    <li>
+                        <a href="index.html#"><i class="fa fa fa-globe"></i> <span class="nav-label">android</span><span
+                                class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#" onclick="android_serialization()">android 性能优化之序列化.md</a>
+                            </li>
+
+                            <li>
+                                <a href="#" onclick="android_json()">android 性能优化之Json解析</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="index.html#"><i class="fa fa fa-globe"></i> <span class="nav-label">jQuery</span><span
+                                class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#" onclick="jQuery(1)">1 jQuery安装使用</a>
+                            </li>
+
+                            <li>
+                                <a href="#" onclick="jQuery(2)">2 jQuery基本语法</a>
+                            </li>
+
+                            <li>
+                                <a href="#" onclick="jQuery(3)">3 jQuery HTML</a>
+                            </li>
+
+                            <li>
+                                <a href="#" onclick="jQuery(4)">4 jQuery 遍历</a>
+                            </li>
+
+                            <li>
+                                <a href="#" onclick="jQuery(5)">5 jQuery AJAX</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="learn_page-wrapper">
+            <script>
+                // 首次进入执行  加载
+                (function() {
+                    $("#learn_page-wrapper").load("./blog/android/Android_Optimization-serialization.html");
+//                    $("#learn_page-wrapper").load("./home_page.html");
+                })();
+            </script>
+
+        </div>
+    </div>
+
+</body>
+</html>

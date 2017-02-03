@@ -1,0 +1,93 @@
+#wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    padding: 0 20px;
+}
+
+.navbar-static-side {
+    z-index: 2001;
+    position: absolute;
+    width: 220px;
+}
+
+.navbar-default {
+    height: 100%;
+    background-color: #1a2d41;
+    border-color: rgb(47, 64, 80);
+}
+
+div {
+    display: block;
+}
+
+img {
+    border: 0;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav > li > a {
+    color: #a7b1c2;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-second-level li a {
+    padding: 7px 10px 7px 10px;
+    padding-left: 52px;
+}
+
+.collapse {
+    display: none;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.arrow {
+    float: right;
+
+}
+
+.fa.arrow:before {
+    content: "\f104";
+
+}
+
+.active > a > .fa.arrow:before {
+    content: "\f107";
+}
+
+.page-wrapper {
+     background-color: #0000cc;
+}
