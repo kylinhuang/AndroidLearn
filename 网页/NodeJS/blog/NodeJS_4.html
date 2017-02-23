@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NodeJS</title>
+</head>
+<br>
+
+<h1> 4 Nodejs  - 方法调用 </h1>
+
+    <h3> 1 调用 普通函数 </h3>
+
+    <pre><code>
+        var    http    =    require('http');
+        http.createServer(function    (request,    response)    {
+            response.writeHead(200,    {'Content-Type':    'text/html;    charset=utf-8'});
+            if(request.url!=="/favicon.ico"){    //清除第2此访问
+                fun1(response);
+                response.end('');
+            }
+        }).listen(8000);
+        console.log('Server    running    at    http://127.0.0.1:8000/');
+
+        //---普通函数
+        function  fun1(res){
+            res.write("你好,我是fun1");
+        }
+    </code></pre>
+
+<h3>2 调用其他js文件方法 </h3>
+
+
+    <h4> 2.1 调用单个方法 </h4>
+
+    <span>models/singlefuns.js</span>
+    <pre><code>
+        function  singlefun(req,res){
+            console.log('singlefun');
+            res.write("singlefun");
+        }
+        module.exports  =  singlefun;    //只支持一个函数
+    </code></pre>
+
+    <span>n2_funcall.js</span>
+    <pre><code>
+        var singlefuns = require('./models/singlefuns.js');
+
+        if(request.url!=="/favicon.ico"){    //清除第2此访问
+            singlefuns(request,response);
+            response.end('');
+        }
+    </code></pre>
+
+
+
+    <h4> 2.2 调用多个方法 </h4>
+
+    <span>models/otherfuns.js</span>
+
+    <pre><code>
+
+        module.exports={
+
+            funo1:function(res){
+                console.log("funo1");
+                res.write("funo1");
+            },
+
+            funo2:function(res){
+                console.log("funo2");
+                res.write("funo2");
+            }
+
+        }
+    </code></pre>
+
+    <span>n2_funcall.js</span>
+    <pre><code>
+
+        var    otherfun    =    require('./models/otherfuns.js');
+
+        otherfun.funo1(response);
+        otherfun.funo2(response);
+    </code></pre>
+
+
+<h4>注意</h4>
+<pre><code>
+    funname  =  'funo1';
+    otherfun[funname](response);
+</code></pre>
+
+
+方法名 可以用字符串代替
+<pre><code>
+    otherfun.funo1(response); 是一样的
+</code></pre>
+
+
+
+
+</body>
+</html>

@@ -13,6 +13,7 @@ log.txt
 npm-debug.log*
 
 
+video/*
 image/*
 .idea/
 .sass-cache/
