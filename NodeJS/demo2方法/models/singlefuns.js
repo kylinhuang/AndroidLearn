@@ -1,0 +1,13 @@
+
+
+function  controller(req,res){
+    //res.write("发送");
+    call('hello',req,res);
+    res.end("");
+}
+
+function  call(res){
+    console.log('call');
+}
+
+module.exports  =  controller;    //只支持一个函数

@@ -1,10 +1,12 @@
 /**
  * Created by kylinhuang on 14/01/2017.
+ *
+ * demo1  简单 http 请求
+ *
  */
 var http = require('http');
 
 http.createServer(function (request, response) {
-
     // 发送 HTTP 头部
     // HTTP 状态值: 200 : OK
     // 内容类型: text/plain
