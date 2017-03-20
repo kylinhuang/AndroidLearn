@@ -1,6 +1,0 @@
-webstom
-webstom格式化
-
-centOS 下webstorm 格式化代码的快捷键 Ctrl+Shift+l
-windows 下 webstorm 格式化代码的快键键 Ctrl+Alt+l
-mac 下 webstorm 格式化代码的快捷键 Option+Command+l
