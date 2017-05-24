@@ -9,7 +9,7 @@ http.createServer(function  (request,  response)  {
     if(request.url!=="/favicon.ico"){  //清除第2此访问
         console.log('访问');
         response.write('hello,world');
-        //optfile.readfile("G:\\www\\nodejs\\one\\models\\aa.txt");
+        // optfile.readfile("G:\\www\\nodejs\\one\\models\\aa.txt");
         var data = optfile.readfileSync("/Users/kylinhuang/github/AndroidLearn/NodeJS/demo5_ReadFile/demo.txt");
         response.write(data);
         response.end('hell,世界');//不写则没有http协议尾
